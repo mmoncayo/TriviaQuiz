@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trivia Quiz!</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="high-scores.html">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body style="margin-top: 100px;">
+  <a id=highScoreMain href="high-scores.html">View High Scores</a>
+  <div id= "start"">
+    <h1>Trivia Quiz Challenge</h1>
+    <h4>Test your knowledge and try to answer as many random trivia questions correctly within the time limit.</h4> 
+    <h4>Keep in mind that incorrect answers will penalize your score by ten seconds!</h4>
+    <button>Start Quiz</button>
+  </div>
+  <div id= "timer"></div>
+  <h2 id= "test_status" style="display: none;"></h2>
+  <div id= "test" style="display: none;"></div>
+  <audio id="correctAnswer">
+    <source src= "correct.mp3">
+  </audio>
+  <audio id= "wrongAnswer">
+    <source src= "wrong.mp3">
+  </audio>
+  <form id="form" style="display:none">
+    <input type="text" id="initials">
+    <button type="submit" id= "highScores" value="Submit">Submit</button>
+  </form>
+  
+<script src="./script.js"></script>
+</body>
+</html>
