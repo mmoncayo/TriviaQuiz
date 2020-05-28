@@ -1,5 +1,7 @@
 # README
 
+Deployed link: https://mmoncayo.github.io/TriviaQuiz/
+
 This program takes the user through a set of questions that must be answered within a time limit that begins once the user clicks to start the quiz.
 
 The key things that are noted in this program are: 
